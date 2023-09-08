@@ -7,7 +7,11 @@ typedef struct {
 }*Stackp,Stack;
 
 int InitStack(Stackp s);
-
+int stackempty(Stackp s);
+int pop(LinkStack s,char e);
+int stackEmpty(LinkStack s);
+void InitStack(LinkStack s);
+int Push(LinkStack s,char e);
 //Á´Õ»
 typedef struct stacknode
 {

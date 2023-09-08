@@ -22,6 +22,12 @@ int EnQueue(Linkqueue q,char e){
     q->rear = (q->rear + 1) % MAXQUESIZE;
     return 0;
 }
+int EnQueue(Linkqueue q,BTree t){
+    if((q->rear + 1)% MAXQUESIZE == q->front)return -1;
+    q->base[q->rear] = t;
+    q->rear = (q->rear + 1) % MAXQUESIZE;
+    return 0;
+}
 //循环队列出队
 int OUtQueue(Linkqueue q,char e){
     if(q->front == q->rear)return -1;

@@ -82,7 +82,6 @@ int top(LinkStack s,char e){
     e = s->data;
     return 0;
 }
-//
 
 
 
